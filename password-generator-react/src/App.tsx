@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import s from './App.module.scss';
 
 const charactersLower = "abcdefghijklmnopqrstuvwxyz";
@@ -6,11 +6,17 @@ const charactersUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const charactersNumbers = "0123456789";
 const charactersSymbols = "!@#$%^&*()_+-=[]{}|;':,.<>?/";
 
+function secureRandom() {
+    var buf = new Uint32Array(2);
+    crypto.getRandomValues(buf);
+    return (buf[0] + buf[1] * 2**32) / (2 ** 64);
+}
+
 function generatePassword(length: number, includeSymbols: boolean) {
     const charset = charactersLower + charactersUpper + charactersNumbers + (includeSymbols ? charactersSymbols : "");
     let newPassword = "";
     for (let i = 0; i < length; i++) {
-        const randomIndex = Math.floor(Math.random() * charset.length);
+        const randomIndex = Math.floor(secureRandom() * charset.length);
         newPassword += charset[randomIndex];
     }
     return newPassword;
