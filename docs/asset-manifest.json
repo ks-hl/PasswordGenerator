@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.4d29b8ba.css",
-    "main.js": "/static/js/main.e04cc2cb.js",
-    "static/js/453.cc2df835.chunk.js": "/static/js/453.cc2df835.chunk.js",
-    "index.html": "/index.html",
-    "main.4d29b8ba.css.map": "/static/css/main.4d29b8ba.css.map",
-    "main.e04cc2cb.js.map": "/static/js/main.e04cc2cb.js.map",
-    "453.cc2df835.chunk.js.map": "/static/js/453.cc2df835.chunk.js.map"
+    "main.css": "/PasswordGenerator/static/css/main.4d29b8ba.css",
+    "main.js": "/PasswordGenerator/static/js/main.c48cb781.js",
+    "static/js/453.cc2df835.chunk.js": "/PasswordGenerator/static/js/453.cc2df835.chunk.js",
+    "index.html": "/PasswordGenerator/index.html",
+    "main.4d29b8ba.css.map": "/PasswordGenerator/static/css/main.4d29b8ba.css.map",
+    "main.c48cb781.js.map": "/PasswordGenerator/static/js/main.c48cb781.js.map",
+    "453.cc2df835.chunk.js.map": "/PasswordGenerator/static/js/453.cc2df835.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4d29b8ba.css",
-    "static/js/main.e04cc2cb.js"
+    "static/js/main.c48cb781.js"
   ]
 }
